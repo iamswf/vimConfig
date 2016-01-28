@@ -30,6 +30,8 @@ Plugin 'Valloric/YouCompleteMe'
 " html插件
 Plugin 'mattn/emmet-vim'
 
+" 显示空字符插件
+Plugin 'Yggdroot/indentLine'
 " ------------------自定义插件官方示例end--------------------------
 
 " All of your Plugins must be added before the following line
@@ -46,9 +48,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-" -------------------------plugin settings-----------------------
-nmap <Leader>n :NERDTreeTabsToggle<CR>
 
 " -------------------------settings-------------------------------
 " 设置退格可用
@@ -96,6 +95,10 @@ imap {<CR> {<CR>}<ESC>O
 " colorscheme monokai
 colorscheme monokai
 
+" -------------------------plugin settings-----------------------
+" NERDTree
+nmap <Leader>n :NERDTreeTabsToggle<CR>
+
 " emmet
 imap ,, <C-y>,
 
@@ -106,4 +109,10 @@ highlight PmenuSel ctermbg=green ctermfg=red
 " YouCompleteMe close the 'preview' window
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" indentLine
+let g:indentLine_color_term = 239
+let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_char = '*'
+let g:indentLine_leadingSpaceEnabled = 1
 
