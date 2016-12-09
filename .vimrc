@@ -19,6 +19,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " 配色方案
 Plugin 'sickill/vim-monokai'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'yosiat/oceanic-next-vim'
 
 " 自动关闭插件(autoClose跟YouCompleteMe不兼容)
 Plugin 'Raimondi/delimitMate'
@@ -93,7 +94,8 @@ imap {<CR> {<CR>}<ESC>O
 " colorscheme solarized
 
 " colorscheme monokai
-colorscheme monokai
+
+colorscheme OceanicNext
 
 " -------------------------plugin settings-----------------------
 " NERDTree
