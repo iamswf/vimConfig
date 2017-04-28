@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " -----------------自定义插件官方示例start-----------------------
+" 文件树
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -51,6 +52,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " -------------------------settings-------------------------------
+" 设置<Leader>键
+let mapleader=","
+
 " 设置退格可用
 set backspace=2
 
@@ -100,6 +104,12 @@ colorscheme OceanicNext
 " -------------------------plugin settings-----------------------
 " NERDTree
 nmap <Leader>n :NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_open_on_gui_startup = 2
+let g:nerdtree_tabs_open_on_console_startup = 2
+let g:nerdtree_tabs_open_on_new_tab = 1
+let g:nerdtree_tabs_focus_on_files = 1
+let g:nerdtree_tabs_autofind = 1
+let NERDTreeIgnore = ['\.class$']
 
 " emmet
 imap ,, <C-y>,
