@@ -123,6 +123,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " indentLine
+let g:indentLine_fileTypeExclude = ['nerdtree']
 let g:indentLine_color_term = 239
 let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_char = '*'
